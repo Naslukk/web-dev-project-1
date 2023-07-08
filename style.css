@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+body{
+    background: #0e1525;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.wrapper{
+    display: grid;
+    text-align: center;
+    gap: 5px;
+    padding: 5px;
+    z-index: 1;
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.wrapper .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 5px solid #c7c5c5;
+}
+.wrapper h4{
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.contacts a i{
+    font-size: 30px;
+}
+.items{
+    display: flex;
+}
+.item{
+    padding:5px;
+    font-weight: 200;
+    transition: all;
+}
+.item:hover{
+    background: #222c42;
+    border-radius:2px ;
+}
+.content {
+    display: none;
+}
+.content .heading{
+    width: 100%;
+    color: #222c42;
+    background: #fff;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 2px;
+}
+.content ul{
+    list-style: none;
+    margin-top: 10px;
+    width: 100%;
+}
+.content ul li{
+    width: 100%;
+    background: #fff;
+    color: #222c42;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 2px;
+}
+.content ul li a{
+    color: #222c42;
+}
+.active{
+    display: grid;
+}
